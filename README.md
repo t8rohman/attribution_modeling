@@ -16,7 +16,7 @@ For the specific versions of these libraries, please refer to the "requirements.
 
 To begin, your data should adhere to the following format:
 
-<img src="https://github.com/t8rohman/attribution_modeling/blob/main/images/dataset-format.png" alt="GitHub Logo" width="1000">
+<img src="https://github.com/t8rohman/attribution_modeling/blob/main/images/dataset-format.png" alt="Dataset Format" width="1000">
 
 The expected columns include:
 
@@ -41,6 +41,10 @@ simple_att = simple_models.SimpleModels(df,
                                        col_conv='conversion')
 simple_att.combine_all_methods()
 ```
+
+The result would be as follow:
+
+<img src="https://github.com/t8rohman/attribution_modeling/blob/main/images/simple_at-combine_all_methods.png" alt="Dataset Format" width="600">
 
 ## Markov Chain Modeling
 
@@ -71,6 +75,10 @@ transition_matrix = markov_chain_analysis.create_transition_matrix()
 
 att_markov = markov_chain_analysis.removal_attribution_channels()
 ```
+
+The final result would contain the removal effects and channel attribution like below:
+
+<img src="https://github.com/t8rohman/attribution_modeling/blob/main/images/markov_chain_analysis-removal_attribution_channels.png" alt="Dataset Format" width="400">
 
 ## Extras!
 
